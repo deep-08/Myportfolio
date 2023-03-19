@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myportfolio-Deepak</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c621238843.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Tools</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Software Test Engineer</p>
+                <h1>Hi, I'm <span>Deepak</span><br>From Tamil Nadu</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ---------------------about------------------ -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jfif">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a fresher and I have taken training in software testing from a Besant Technologies institute. I am a BCA by education.
+                       I have learnt functional and non-functional testing during my software testing training.
+                       I have executed a project in software testing where I used automation testing tool Selenium to automate some of the commonly used features of the application. 
+                       I have written test cases for the manual execution and reported defects in Jira. I am well versed with the testing concepts in black box testing. 
+                       I am sure given a chance, I will be quick to learn and perform in a software testing project.</p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('Certification')">Certification</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Manual Testing</span><br>Execution of Test cases.</li>
+                                <li><span>SQL</span><br>Create & Maintain a RDMS.</li>
+                                <li><span>Automation Testing</span><br>Selenium with Java.</li>
+                            </ul>
+                         </div>
+
+                         <div class="tab-contents" id="Certification">
+                            <ul>
+                                <li><span>SDET-2023</span><br>Besant Technologies institute Banglore.</li>
+                                <li><span>CTE-2021</span><br>Easwaren institute Tamil Nadu.</li>
+                        </div>
+
+                         <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>2023</span><br>Software Testing Training at Besant Technologies institute.</li>
+                                <li><span>2021</span><br>BCA from Thiruvalluvar University Tamil Nadu.</li>
+                                <li><span>2021</span><br>Logistic Consignment Tracking Executive Training at Easwaren institute.</li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- -----------------------Tools------------------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Tools</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-brands fa-jira"></i>
+                <h2>Jira</h2>
+                <p>Jira that tracks and i can manages issues through the issue/defect life cycle &
+                 easy searching and provides information on previous versions of projects.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-sharp fa-solid fa-feather"></i>
+                <h2>SQl plus</h2>
+                <p>Structured query language i use to retrieve information in digital databases, 
+                    and i use this when working with relational database management systems.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Selenium Java</h2>
+                <p>I can automate functional tests and
+                   can be integrated with automation test tools such as Maven, Jenkins, & Docker to achieve continuous testing.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------------------------Portfolio---------------------- -->
+
+<div id="portfolio">
+    <div class="container">
+    <h1 class="sub-title">My projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Defect Tracking</h3>
+                    <p>Bug tracking is the process of logging and monitoring bugs or errors during software testing.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>DataBase</h3>
+                    <p>Bug tracking is the process of logging and monitoring bugs or errors during software testing.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Automation TestCases</h3>
+                    <p>Bug tracking is the process of logging and monitoring bugs or errors during software testing.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- -----------------------------contact-------------------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contanct Me</h1>
+                <p><i class="fa-sharp fa-solid fa-paper-plane"></i> deepakoffl.08@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i> 6385407006</p>
+                <div class="social-icons">
+                
+                <a href="https://facebook.com/deepakdeepak"><i class="fa-brands fa-facebook"></i></a>
+                <a href="https://twitter.com/pablO_esco08"><i class="fa-brands fa-twitter-square"></i></a>
+                <a href="https://instagram.com/deepak._tn"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/deepak-sudhakar-440401244"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/deepk_resume 2.pdf" download class="btn btn2">Download CV</a>
+         </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Thank You for watching <i class="fa-solid fa-heart"></i> Myportfolio</p>
+    </div>
+</div>
+
+
+
+
+
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+  </script>  
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyp2ZET1y_XBJ13D4KWbEcuasQa7ops5gE6vEf-B5fGHpNYCuzH2FFNAL3JZqNSEU9u/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
